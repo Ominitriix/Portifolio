@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Parisienne";
+  src: url("../../font/Parisienne/Parisienne-Regular.ttf");
+}
+
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+:root {
+  --bg: #f4f4f4;
+  --color-light: #efefef;
+  --color-title: #272727;
+  --color-prg: #5d5a5a;
+  --border: #5d5a5a;
+  --color-primary: #03a0a7;
+}
+
+body {
+  font-size: 0.9em;
+}
+
+p,
+a {
+  color: var(--color-prg);
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+
+  transition: color 300ms;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 0.95;
+  color: var(--color-title);
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+hr.bd-vertical {
+  border: 0;
+  width: 1px;
+  height: auto;
+  background-color: #efefef;
+}
+
+.button-primary {
+  padding: 0.2rem 2rem;
+  background-color: var(--color-title);
+  font-weight: 500;
+  position: relative;
+}
+
+.button-primary span {
+  color: var(--bg);
+  font-size: 1em;
+  position: relative;
+  z-index: 999;
+}
+
+.button-primary::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  z-index: 2;
+  transition: width 600ms;
+}
+
+.button-primary:hover::after {
+  right: 0;
+  width: 0;
+}
+
+.mini-title {
+  font-size: 1.4em !important;
+  font-weight: 400;
+  font-variant-caps: all-petite-caps;
+  margin-bottom: 1rem;
+}
+
+h2 span,
+h3 span {
+  color: var(--color-primary);
+}
