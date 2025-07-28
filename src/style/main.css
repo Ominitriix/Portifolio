@@ -16,7 +16,7 @@ html {
 
 :root {
   --bg: #f4f4f4;
-  --color-light: #efefef;
+  --color-light: #e6e6e6;
   --color-title: #272727;
   --color-prg: #5d5a5a;
   --border: #5d5a5a;
@@ -25,10 +25,12 @@ html {
 
 body {
   font-size: 0.9em;
+  background-color: var(--bg);
 }
 
 p,
-a {
+a,
+label {
   color: var(--color-prg);
   text-decoration: none;
   font-weight: 400;
@@ -44,7 +46,7 @@ h3,
 h4 {
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: -2px;
   line-height: 0.95;
   color: var(--color-title);
 }
@@ -53,6 +55,11 @@ button {
   border: 0;
   outline: 0;
   cursor: pointer;
+}
+
+button,
+label {
+  user-select: none;
 }
 
 ul {
@@ -75,7 +82,7 @@ hr.bd-vertical {
 
 .button-primary span {
   color: var(--bg);
-  font-size: 1em;
+  font-size: 1.1em;
   position: relative;
   z-index: 999;
 }
@@ -100,11 +107,34 @@ hr.bd-vertical {
 
 .mini-title {
   font-size: 1.4em !important;
-  font-weight: 400;
+  font-weight: 500;
   font-variant-caps: all-petite-caps;
   margin-bottom: 1rem;
 }
 
+.logo {
+  font-family: "Parisienne", sans-serif;
+  width: 40px;
+  height: 45px;
+  display: grid;
+  place-content: center;
+  background-color: var(--color-title);
+  color: var(--bg);
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.text-personalized {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-personalized span {
+  font-family: "Parisienne", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+}
 h2 span,
 h3 span {
   color: var(--color-primary);
