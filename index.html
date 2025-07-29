@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-Br" class="sr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu portifolio</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="src/style/global.css" />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="index.html">
+        <a href="index.html" class="show-elem">
           <h1 class="logo">C</h1>
-          <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#work">Trabalhos</a></li>
-            <li><a href="#galery">Galeria</a></li>
-          </ul>
-          <button type="button" class="button-primary">
-            <span>Contato</span>
-          </button>
         </a>
+        <ul class="show-elem">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#work">Trabalhos</a></li>
+          <li><a href="#galery">Galeria</a></li>
+        </ul>
+        <button type="button" class="button-primary show-elem">
+          <span>Contato</span>
+        </button>
       </nav>
     </header>
 
     <section id="home">
       <div class="block"></div>
       <div class="introduction">
-        <h2>Está procurando um Designer ou Dev <span>Web</span>?</h2>
-        <p>
+        <h2 class="slide-left">
+          Está procurando um Designer ou Dev <span>Web</span>?
+        </h2>
+        <p class="slide-left">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
-        <a href="#about"
+        <a href="#about" class="show-elem"
           ><button type="button" class="button-primary">
             <span>Veja mais</span>
           </button></a
@@ -42,7 +45,11 @@
       </div>
       <div class="figure">
         <p class="mini-title">Conheça minha Galeria</p>
-        <img src="assets/img/ilustracao4.jpg" alt="ilustração" />
+        <img
+          src="assets/img/pexels-vlado-paunovic1.jpg"
+          class="slide-right"
+          alt="ilustração"
+        />
       </div>
     </section>
 
@@ -51,8 +58,8 @@
       <div class="block block2"></div>
       <div class="info-about">
         <p class="mini-title">Sobre</p>
-        <h3>Me chamo <span>Carlos Alexandre</span></h3>
-        <p>
+        <h3 class="slide-top">Me chamo <span>Carlos Alexandre</span></h3>
+        <p class="slide-top">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
           quam. Alias sequi rerum aperiam harum provident laudantium cumque
           eligendi tempore deserunt quia, molestias nam rem explicabo earum
@@ -66,7 +73,7 @@
           reiciendis ab ipsa optio unde facilis sapiente!
         </p>
         <br />
-        <p>
+        <p class="slide-top">
           Praesentium voluptas ullam veniam aspernatur neque vel dolores
           temporibus ut soluta minus dolorem maiores, sint reiciendis ab ipsa
           optio unde facilis sapiente! corporis exercitationem numquam? Lorem
@@ -79,8 +86,8 @@
       <hr class="bd-vertical" />
       <div class="info-skills">
         <p class="mini-title">Habilidades</p>
-        <h3><span>Tecnologia</span> usada em cada projeto</h3>
-        <p>
+        <h3 class="slide-top"><span>Tecnologia</span> usada em cada projeto</h3>
+        <p class="slide-top">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
           quam. Alias sequi rerum aperiam harum provident laudantium cumque
           eligendi tempore deserunt quia, molestias nam rem explicabo earum
@@ -122,7 +129,7 @@
         <div class="line-vertical"></div>
         <div class="work">
           <div class="block"></div>
-          <div class="info-work">
+          <div class="info-work slide-gradual">
             <div class="header-work">
               <h4>Trabalho tal</h4>
               <p>12/02/2006</p>
@@ -137,7 +144,7 @@
         </div>
         <div class="work">
           <div class="block"></div>
-          <div class="info-work">
+          <div class="info-work slide-gradual">
             <div class="header-work">
               <h4>Trabalho tal</h4>
               <p>12/02/2006</p>
@@ -152,7 +159,7 @@
         </div>
         <div class="work">
           <div class="block"></div>
-          <div class="info-work">
+          <div class="info-work slide-gradual">
             <div class="header-work">
               <h4>Trabalho tal</h4>
               <p>12/02/2006</p>
@@ -167,7 +174,7 @@
         </div>
         <div class="work">
           <div class="block"></div>
-          <div class="info-work">
+          <div class="info-work slide-gradual">
             <div class="header-work">
               <h4>Trabalho tal</h4>
               <p>12/02/2006</p>
@@ -183,8 +190,8 @@
       </div>
       <div class="intro-work">
         <p class="mini-title">Trabalho</p>
-        <h3><span>Experiência</span> ampla no mercado</h3>
-        <p>
+        <h3 class="slide-top"><span>Experiência</span> ampla no mercado</h3>
+        <p class="slide-top">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos obcaecati
           labore in quasi exercitationem! Ipsa, ullam. Assumenda sequi, ullam
           veritatis magnam pariatur at, quibusdam facilis ipsam, quis ad saepe
@@ -194,7 +201,7 @@
           quis ad saepe molestiae.
         </p>
         <br />
-        <p class="see-more">
+        <p class="see-more show-elem">
           <span>Veja mais</span>
           <a href="#"><img src="assets/img/github.svg" alt="icone" /></a>
           <a href="#"><img src="assets/img/instagram.svg" alt="icone" /></a>
@@ -207,8 +214,8 @@
       <div class="galery-header">
         <div>
           <p class="mini-title">Galeria</p>
-          <h2>Projetos <span>diversos</span></h2>
-          <p>
+          <h2 class="show-elem">Projetos <span>diversos</span></h2>
+          <p class="show-elem">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
             libero veniam, dicta reiciendis maiores cumque est repudiandae saepe
             laudantium?
@@ -216,21 +223,21 @@
         </div>
         <div class="header-images">
           <img
-            src="assets/img/ilustracao2.jpg"
-            class="image-secundary"
+            src="assets/img/pexels-vlado-paunovic3.jpg"
+            class="image-secundary slide-right"
             alt="ilustração"
           />
           <img
-            src="assets/img/ilustracao1.jpg"
-            class="image-principal"
+            src="assets/img/pexels-vlado-paunovic4.jpg"
+            class="image-principal slide-right"
             alt="ilustração"
           />
         </div>
       </div>
 
       <div class="project">
-        <h3>Modelos de <span>projetos</span></h3>
-        <ul class="list-model-buttons">
+        <h3 class="show-elem">Modelos de <span>projetos</span></h3>
+        <ul class="list-model-buttons show-elem">
           <li>
             <input type="radio" name="checkModel" id="model1" checked />
             <label for="model1">Galeria</label>
@@ -264,7 +271,10 @@
           <div>
             <p class="mini-title">Projeto</p>
             <figure>
-              <img src="assets/img/ilustracao3.jpg" alt="ilustração" />
+              <img
+                src="assets/img/pexels-joachim-hoholm2.jpg"
+                alt="ilustração"
+              />
               <figcaption>
                 <button type="button">
                   <img src="assets/img/eye.svg" alt="icone" />
@@ -275,7 +285,10 @@
           <div>
             <p class="mini-title">Projeto</p>
             <figure>
-              <img src="assets/img/ilustracao3.jpg" alt="ilustração" />
+              <img
+                src="assets/img/pexels-joachim-hoholm2.jpg"
+                alt="ilustração"
+              />
               <figcaption>
                 <button type="button">
                   <img src="assets/img/eye.svg" alt="icone" />
@@ -286,7 +299,10 @@
           <div>
             <p class="mini-title">Projeto</p>
             <figure>
-              <img src="assets/img/ilustracao3.jpg" alt="ilustração" />
+              <img
+                src="assets/img/pexels-joachim-hoholm2.jpg"
+                alt="ilustração"
+              />
               <figcaption>
                 <button type="button">
                   <img src="assets/img/eye.svg" alt="icone" />
@@ -297,7 +313,10 @@
           <div>
             <p class="mini-title">Projeto</p>
             <figure>
-              <img src="assets/img/ilustracao3.jpg" alt="ilustração" />
+              <img
+                src="assets/img/pexels-joachim-hoholm2.jpg"
+                alt="ilustração"
+              />
               <figcaption>
                 <button type="button">
                   <img src="assets/img/eye.svg" alt="icone" />
@@ -308,7 +327,10 @@
           <div>
             <p class="mini-title">Projeto</p>
             <figure>
-              <img src="assets/img/ilustracao3.jpg" alt="ilustração" />
+              <img
+                src="assets/img/pexels-joachim-hoholm2.jpg"
+                alt="ilustração"
+              />
               <figcaption>
                 <button type="button">
                   <img src="assets/img/eye.svg" alt="icone" />
@@ -319,7 +341,10 @@
           <div>
             <p class="mini-title">Projeto</p>
             <figure>
-              <img src="assets/img/ilustracao3.jpg" alt="ilustração" />
+              <img
+                src="assets/img/pexels-joachim-hoholm2.jpg"
+                alt="ilustração"
+              />
               <figcaption>
                 <button type="button">
                   <img src="assets/img/eye.svg" alt="icone" />
@@ -330,7 +355,10 @@
           <div>
             <p class="mini-title">Projeto</p>
             <figure>
-              <img src="assets/img/ilustracao3.jpg" alt="ilustração" />
+              <img
+                src="assets/img/pexels-joachim-hoholm2.jpg"
+                alt="ilustração"
+              />
               <figcaption>
                 <button type="button">
                   <img src="assets/img/eye.svg" alt="icone" />
@@ -341,7 +369,10 @@
           <div>
             <p class="mini-title">Projeto</p>
             <figure>
-              <img src="assets/img/ilustracao3.jpg" alt="ilustração" />
+              <img
+                src="assets/img/pexels-joachim-hoholm2.jpg"
+                alt="ilustração"
+              />
               <figcaption>
                 <button type="button">
                   <img src="assets/img/eye.svg" alt="icone" />
@@ -354,7 +385,7 @@
       <div class="block"></div>
     </section>
 
-    <footer id="footer">
+    <footer id="footer" class="show-elem">
       <div class="block block1"></div>
       <div class="block block2"></div>
 
@@ -383,6 +414,7 @@
           <li><a href="#">Pexels.com/Khoa Võ</a></li>
           <li><a href="#">Pexels.com</a></li>
           <li><a href="#">Feathericons.com</a></li>
+          <li><a href="#">ScrollReveal.org</a></li>
         </ul>
       </div>
 
@@ -394,5 +426,7 @@
         <img src="assets/img/arrow-up.svg" alt="icone" />
       </button>
     </footer>
+
+    <script src="src/scrollreveal.js"></script>
   </body>
 </html>
