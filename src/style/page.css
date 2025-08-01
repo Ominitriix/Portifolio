@@ -47,6 +47,7 @@
 #home .figure {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 #home .figure img {
@@ -303,14 +304,12 @@
   height: 400px;
   max-height: 400px;
   position: relative;
+  transition: outline-color 300ms;
 }
 
 #galery .project .scroll-projects > div figure:hover {
-  border: 1px solid var(--border);
-}
-
-#galery .project .scroll-projects > div figure:hover img {
-  transform: translate(0.3rem, 0.3rem);
+  outline: 1px solid var(--border);
+  outline-offset: 2px;
 }
 
 #galery .project .scroll-projects > div figure > img {

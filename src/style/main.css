@@ -1,8 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
 @font-face {
   font-family: "Parisienne";
   src: url("../../font/Parisienne/Parisienne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../../font/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../../font/Source_Sans_3/SourceSans3-VariableFont_wght.ttf");
 }
 
 html.sr .show-elem,
@@ -84,6 +92,11 @@ hr.bd-vertical {
   background-color: #efefef;
 }
 
+h2 span,
+h3 span {
+  color: var(--color-primary);
+}
+
 .button-primary {
   padding: 0.2rem 2rem;
   background-color: var(--color-title);
@@ -146,7 +159,31 @@ hr.bd-vertical {
   font-size: 1.4em;
   font-weight: 400;
 }
-h2 span,
-h3 span {
-  color: var(--color-primary);
+
+.arrow {
+  width: 4px;
+  height: 4rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+}
+
+.arrow div {
+  transform: translateX(-1rem);
+}
+
+.arrow .arrow-body {
+  width: 2px;
+  height: 2rem;
+  background-color: var(--border);
+}
+
+.arrow .arrow-head {
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--border) transparent transparent transparent;
 }
