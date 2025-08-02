@@ -2,6 +2,9 @@
 @import url("page.css");
 
 @media screen and (min-width: 320px) {
+  body {
+    font-size: 1.1em;
+  }
   .navbar .navbar-buttons img {
     display: inherit;
   }
