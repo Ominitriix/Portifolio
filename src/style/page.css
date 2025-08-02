@@ -5,6 +5,18 @@
   padding: 1rem 10%;
 }
 
+.navbar .navbar-buttons {
+  display: inherit;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar .navbar-buttons img {
+  display: none;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
 .navbar ul {
   display: flex;
   gap: 2rem;
