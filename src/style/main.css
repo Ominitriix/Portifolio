@@ -236,8 +236,10 @@ h3 span {
 }
 
 #menu_lateral a.x-mark {
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
+  width: 2em;
+  height: 2em;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 #menu_lateral a.button-m-contact {
