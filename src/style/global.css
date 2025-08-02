@@ -139,6 +139,7 @@
   #galery .project .list-model-buttons {
     border-bottom: 1px solid var(--color-light);
     overflow-x: scroll;
+    padding-inline: 1rem;
     width: 100vw;
   }
 

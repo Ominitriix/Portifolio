@@ -201,6 +201,7 @@ h3 span {
   background-color: var(--bg);
   border-left: 1px solid var(--color-light);
   overflow: hidden;
+  transition: right 500ms;
 }
 
 #menu_lateral:target {
@@ -235,10 +236,8 @@ h3 span {
 }
 
 #menu_lateral a.x-mark {
-  font-size: 1.3em;
-  font-weight: 600;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 #menu_lateral a.button-m-contact {
