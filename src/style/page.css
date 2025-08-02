@@ -284,6 +284,10 @@
   border-bottom: 1px solid var(--color-light);
 }
 
+#galery .project .list-model-buttons::-webkit-scrollbar {
+  display: none;
+}
+
 #galery .project .list-model-buttons li input {
   appearance: none;
 }

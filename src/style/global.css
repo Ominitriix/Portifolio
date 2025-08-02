@@ -5,6 +5,11 @@
   body {
     font-size: 1.2em;
   }
+
+  .button-primary span {
+    font-size: 1.4em;
+  }
+
   .navbar .navbar-buttons img {
     display: inherit;
   }
