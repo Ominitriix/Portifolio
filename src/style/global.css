@@ -1,9 +1,21 @@
 @import url("main.css");
 @import url("page.css");
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 359px) {
   body {
-    font-size: 1.2em;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 1em !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 1.1em;
   }
 
   .button-primary span {
@@ -155,6 +167,12 @@
 
   #galery .project .scroll-projects > div {
     width: 100%;
+  }
+
+  #galery .project .scroll-projects > div figure {
+    outline-width: 2px;
+    outline-offset: 3px;
+    height: 500px;
   }
 
   #footer {
