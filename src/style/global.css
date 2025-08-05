@@ -1,18 +1,24 @@
 @import url("main.css");
 @import url("page.css");
 
+/* Limitando layout para smartphones pequenos*/
 @media screen and (max-width: 359px) {
   body {
     display: none;
   }
 }
 
+/* 
+  Smartphones pequenos até os grandes
+  Diminuindo a fonte para melhor adaptação
+*/
 @media screen and (max-width: 360px) {
   body {
     font-size: 1em !important;
   }
 }
 
+/* Smartphones pequenos até os grandes */
 @media screen and (max-width: 500px) {
   body {
     font-size: 1.1em;
@@ -190,5 +196,141 @@
   #footer .listnav {
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* Tablet pequenos até os grandes*/
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  #home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    padding-left: 5%;
+  }
+
+  #home .block {
+    display: none;
+  }
+
+  #home .figure {
+    display: none;
+  }
+
+  #home .introduction h2 {
+    font-size: 4.5em;
+  }
+
+  #about {
+    justify-content: center;
+    gap: 1rem;
+    padding-inline: 0;
+  }
+
+  #about .block {
+    display: none;
+  }
+
+  #about > div {
+    width: calc(50% - 2rem);
+  }
+
+  #about h3 {
+    font-size: 2.5em;
+  }
+
+  #work {
+    flex-direction: column-reverse;
+    padding: 20% 5%;
+    gap: 5rem;
+  }
+
+  #work .intro-work .block {
+    display: none;
+  }
+
+  #work .intro-work {
+    max-width: 100%;
+  }
+
+  #work .intro-work h3 {
+    font-size: 4em;
+    margin-bottom: 1rem;
+  }
+
+  #work .intro-work p {
+    max-width: 100%;
+  }
+
+  #work .list-work {
+    max-width: 80%;
+  }
+
+  #galery {
+    padding-block: 10%;
+  }
+
+  #galery .block {
+    display: none;
+  }
+
+  #galery .galery-header {
+    padding: 10% 5%;
+    justify-content: center;
+  }
+
+  #galery .galery-header > div {
+    width: 100%;
+  }
+
+  #galery .galery-header > div:first-child {
+    text-align: center;
+  }
+
+  #galery .galery-header > div p {
+    max-width: 100%;
+  }
+
+  #galery .header-images {
+    display: none;
+  }
+
+  #galery .project {
+    padding: 0;
+  }
+
+  #galery .project h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #galery .project .list-model-buttons {
+    border-bottom: 1px solid var(--color-light);
+    overflow-x: scroll;
+    padding-inline: 1rem;
+    width: 100vw;
+  }
+
+  #galery .project .list-model-buttons li label {
+    white-space: nowrap;
+  }
+
+  #galery .project .scroll-projects {
+    flex-wrap: wrap;
+    padding-inline: 5%;
+    gap: 2rem;
+  }
+
+  #galery .project .scroll-projects > div {
+    width: calc(50% - 2rem);
+  }
+
+  #galery .project .scroll-projects > div figure {
+    outline-width: 2px;
+    outline-offset: 3px;
+    height: 500px;
+  }
+
+  #footer .block {
+    display: none;
   }
 }
