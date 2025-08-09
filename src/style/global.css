@@ -36,6 +36,10 @@
     display: none;
   }
 
+  .navbar .navbar-buttons ul.list-social {
+    display: none;
+  }
+
   #home .block {
     display: none;
   }
@@ -83,6 +87,7 @@
   #about h3 {
     font-size: 4em;
     max-width: 20%;
+    height: auto;
   }
 
   #about > .block {
@@ -178,7 +183,6 @@
   #galery .project .scroll-projects > div figure {
     outline-width: 2px;
     outline-offset: 3px;
-    height: 500px;
   }
 
   #footer {
@@ -197,10 +201,28 @@
     display: flex;
     flex-direction: column;
   }
+
+  #footer .header-footer .social-list {
+    margin-top: 0.4rem;
+    gap: 1rem;
+  }
+
+  #footer .header-footer .social-list a img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 }
 
 /* Tablet pequenos até os grandes*/
 @media screen and (min-width: 501px) and (max-width: 1000px) {
+  .navbar {
+    padding-inline: 5%;
+  }
+
+  .navbar ul {
+    gap: 0.8rem;
+  }
+
   #home {
     flex-direction: column;
     justify-content: center;
@@ -236,6 +258,7 @@
 
   #about h3 {
     font-size: 2.5em;
+    height: auto;
   }
 
   #work {
@@ -327,7 +350,6 @@
   #galery .project .scroll-projects > div figure {
     outline-width: 2px;
     outline-offset: 3px;
-    height: 500px;
   }
 
   #footer .block {

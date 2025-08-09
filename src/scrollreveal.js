@@ -49,7 +49,7 @@ ScrollReveal().reveal("#galery .slide-right", {
   interval: 400,
 });
 
-ScrollReveal().reveal("#galery .scroll-projects > div", {
+ScrollReveal().reveal("#galery .scroll-projects", {
   ...showElement,
   interval: 200,
 });

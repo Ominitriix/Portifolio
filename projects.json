@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "title": "Brazuka Express",
+      "lastUpload": "16/07/2025",
+      "urlPage": "https://ominitriix.github.io/Brazuca-Express/",
+      "lang": "typescript",
+      "color": "white",
+      "image": "./assets/img/template_portifolio.png"
+    },
+    {
+      "title": "Brazuka Express",
+      "lastUpload": "16/07/2025",
+      "urlPage": "https://ominitriix.github.io/brazuca-Express/",
+      "lang": "typescript",
+      "color": "dark",
+      "image": "./assets/img/template_brazuca_express.png"
+    }
+  ]
+}

@@ -19,8 +19,7 @@ html.sr .slide-top,
 html.sr .slide-right,
 html.sr .block,
 html.sr .slide-gradual,
-html.sr .mini-title,
-html.sr .scroll-projects {
+html.sr .mini-title {
   visibility: hidden;
 }
 
